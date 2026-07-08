@@ -1,14 +1,17 @@
 # Arduino Leonardo - HW-504 Joystick JoyStick Controller
 
-**Turn your Arduino Leonardo into a plug-and-play USB HID JoyStick to Play Games!**
+**Turn your Arduino Leonardo into a Plug-and-Play USB HID Joystick for Gaming!**
 
-This project uses the popular HW-504 analog joystick module to control your computer's cursor.
+This project uses the popular HW-504 analog joystick module and an Arduino Leonardo to create a USB HID joystick that is recognized by your PC without requiring any additional drivers.
+
+In this demonstration, I use the joystick to control movement in Counter-Strike, showing how easily the Arduino Leonardo can be transformed into a custom gaming controller.
 
 ## Features
 - **Plug-and-Play HID:** Emulates a standard USB mouse using the native USB capabilities of the ATmega32u4 chip.
 - **Precise Cursor Control:** Analog axes with a built-in "dead zone" to prevent cursor drift.
 - **Physical Click Feedback:** The onboard LED (Pin 13) lights up whenever the joystick button is pressed.
 - **Customizable Speed:** Adjust cursor sensitivity easily via a single variable.
+- Compatible with Windows as a standard game controller
 
 ## Hardware Requirements
 | Component | Quantity |
@@ -29,11 +32,16 @@ Connect the HW-504 joystick to your Arduino Leonardo as follows:
 | 4 | **VRy** (Y-Axis) | **A1** |
 | 5 | **SW** (Button) | **Digital Pin 2** |
 
-![Pinout](<Arduino Leonardo.png>)
+<img width="743" height="313" alt="image" src="https://github.com/user-attachments/assets/ad6d241c-b586-4d7b-abbe-8336de2d394e" />
+
+
+<img width="768" height="1024" alt="Arduino Leonardo with joystick" src="https://github.com/user-attachments/assets/f6975f11-67ce-4043-a8ec-49472b4f2646" />
 
 *(Optional: The built-in LED on Pin 13 is used for visual feedback.)*
 
 ![Wiring diagram placeholder - connect GND to GND, 5V to 5V, VRx to A0, VRy to A1, SW to Pin 2]
+
+
 
 ## Software Setup (Arduino IDE)
 1.  Install the [Arduino IDE](https://www.arduino.cc/en/software) if you haven't already.
