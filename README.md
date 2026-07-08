@@ -1,8 +1,8 @@
-# Arduino Leonardo - HW-504 Joystick Mouse Controller
+# Arduino Leonardo - HW-504 Joystick JoyStick Controller
 
-**Turn your Arduino Leonardo into a plug-and-play USB HID mouse!**
+**Turn your Arduino Leonardo into a plug-and-play USB HID JoyStick to Play Games!**
 
-This project uses the popular HW-504 analog joystick module to control your computer's cursor. Moving the stick moves the mouse pointer, and pressing down on the stick performs a **left-click**. It requires no additional drivers and works on Windows, macOS, and Linux instantly.
+This project uses the popular HW-504 analog joystick module to control your computer's cursor.
 
 ## Features
 - **Plug-and-Play HID:** Emulates a standard USB mouse using the native USB capabilities of the ATmega32u4 chip.
@@ -13,11 +13,10 @@ This project uses the popular HW-504 analog joystick module to control your comp
 ## Hardware Requirements
 | Component | Quantity |
 | :--- | :--- |
-| Arduino Leonardo (or Micro / Any ATmega32u4 board) | 1 |
+| Arduino Leonardo | 1 |
 | HW-504 Analog Joystick Module | 1 |
 | Jumper Wires (Male-to-Female or Male-to-Male) | 5 |
 
-> **Important:** The Arduino Uno and Mega do not support native USB HID emulation. You **must** use a Leonardo, Micro, or a similar board based on the ATmega32u4 chip.
 
 ## Wiring Diagram
 Connect the HW-504 joystick to your Arduino Leonardo as follows:
